@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>Instruccions – Virus! Joc de Taula</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Google Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- CSS general -->
+    <link rel="stylesheet" href="estils.css">
+
+    <!-- CSS específic -->
+    <link rel="stylesheet" href="css/instruccions.css">
+</head>
+
+
+
+<body>
+
+    <!-- HEADER (igual que index) -->
+    <header class="main-header">
+        <div class="logo-area">
+            
+            <h1>Virus!</h1>
+            <img src="assets/img/logo.png" alt="Logo Virus!" class="logo">
+        </div>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Inici</a></li>
+                <li><a class="active" href="instruccions1.html">Instruccions</a></li>
+                <li><a href="historia.html">Història</a></li>
+                <li><a href="contacte.html">Contacte</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+
+    <!-- TÍTOL PRINCIPAL -->
+    <section class="page-title-section">
+        <h2 class="page-title">Instruccions del Joc</h2>
+        <p class="subtitle">Aprèn a jugar a Virus! de forma ràpida i clara.</p>
+    </section>
+
+
+
+
+
+
+    <!-- INSTRUCCIONS PAS A PAS -->
+    <section class="instructions-section">
+
+        <div class="instruction-block">
+            <img src="assets/img/caja.png" alt="Barrejar cartes">
+            <div class="text">
+                <h3>1. Preparació inicial</h3>
+                <p>Barregeu totes les cartes i repartiu <strong>3 cartes</strong> a cada jugador. La resta forma la pila de robatori.</p>
+            </div>
+        </div>
+
+        <div class="instruction-block reverse">
+            <img src="assets/img/cartas_esparcidas2.jpg" alt="Jugar cartes">
+            <div class="text">
+                <h3>2. Torn del jugador</h3>
+                <p>Al teu torn, pots <strong>jugar una carta</strong> o <strong>descartar tantes com vulguis</strong>. Després roba fins tornar a tenir tres.</p>
+            </div>
+        </div>
+
+        <div class="instruction-block">
+            <img src="assets/img/chica_virus.png" alt="Salvar organs">
+            <div class="text">
+                <h3>3. Objectiu del joc</h3>
+                <p>L’objectiu és aconseguir <strong>4 òrgans sans</strong> i protegits abans que els rivals t’infectin.</p>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    <!-- MECÀNIQUES DEL JOC -->
+    <section class="mechanics">
+        <h2>Mecàniques del Joc</h2>
+
+        <ul>
+            <li><strong>Infectar:</strong> Envia un Virus a un òrgan rival.</li>
+            <li><strong>Curar:</strong> Aplica una carta de Medicina per protegir-te.</li>
+            <li><strong>Roba cartes especials:</strong> Intercanvia òrgans, destrueix infeccions i més.</li>
+        </ul>
+    </section>
+
+
+
+
+
+    <!-- TARGETES ANIMADES INTERACTIVES -->
+    <section class="cards-animated">
+        <h2>Tipus de Cartes</h2>
+
+        <div class="card-container">
+
+
+            <!-- CHECKBOX ORGANS -->
+            <input type="checkbox" id="modal-organs" class="modal-toggle">
+            <!-- CARD Òrgans-->
+            <label for="modal-organs" class="card">
+                <img src="assets/img/cor_cervell.png" alt="Òrgans">
+                <p>Òrgans</p>
+            </label>
+            <!-- MODAL -->
+            <div class="modal">
+                <div class="modal-content">
+                    <label for="modal-organs" class="close-btn">✕</label>
+                    <h3>Cartes d’Òrgans</h3>
+                    <div class="modal-images">
+                        <img src="assets/cartas/organo1.png" alt="Organ 1">
+                        <img src="assets/cartas/organo2.png" alt="Organ 2">
+                        <img src="assets/cartas/organo3.png" alt="Organ 3">
+                        <img src="assets/cartas/organo4.png" alt="Organ 4">
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- CHECKBOX VIRUS -->
+            <input type="checkbox" id="modal-virus" class="modal-toggle">
+            <!-- CARD VIRUS-->
+            <label for="modal-virus" class="card">
+                <img src="assets/img/virus_verde.png" alt="Virus">
+                <p>Virus</p>
+            </label>
+            <!-- MODAL -->
+            <div class="modal">
+                <div class="modal-content">
+                    <label for="modal-virus" class="close-btn">✕</label>
+                    <h3>Cartes de Virus</h3>
+
+                    <div class="modal-images">
+                        <img src="assets/cartas/virus1.png" alt="Virus 1">
+                        <img src="assets/cartas/virus2.png"  alt="Virus 2">
+                        <img src="assets/cartas/virus3.png"  alt="Virus 3">
+                        <img src="assets/cartas/virus4.png"  alt="Virus 4">
+                        <img src="assets/cartas/virus_fuerte.png" alt="Virus Fuerte">
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- CHECKBOX ESPECIALES -->
+            <input type="checkbox" id="modal-medicina" class="modal-toggle">
+            <!-- CARD VIRUS-->
+            <label for="modal-medicina" class="card">
+                <img src="assets/img/botiquin.png" alt="Medicines">
+                <p>Medicines</p>
+            </label>
+            <!-- MODAL -->
+            <div class="modal">
+                <div class="modal-content">
+                    <label for="modal-medicina" class="close-btn">✕</label>
+                    <h3>Cartes de Medicines</h3>
+
+                    <div class="modal-images">
+                        <img src="assets/cartas/medicina1.png" alt="Medicines 1">
+                        <img src="assets/cartas/medicina2.png" alt="Medicines 2">
+                        <img src="assets/cartas/medicina3.png"alt="Medicines 3">
+                        <img src="assets/cartas/medicina4.png"alt="Medicines 4">
+                        <img src="assets/cartas/medicina_fuerte.png"alt="Medicines Fuerte">
+                        <img src="assets/cartas/cura_todo.png"alt="Cura Todo">
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- CHECKBOX MEDICINA -->
+            <input type="checkbox" id="modal-especials" class="modal-toggle">
+            <!-- CARD VIRUS-->
+            <label for="modal-especials" class="card">
+                <img src="assets/img/caldero.png" alt="Medicines">
+                <p>Especials</p>
+            </label>
+            <!-- MODAL -->
+            <div class="modal">
+                <div class="modal-content">
+                    <label for="modal-especials" class="close-btn">✕</label>
+                    <h3>Cartes Especials</h3>
+
+                    <div class="modal-images">
+                        <img src="assets/cartas/cambia_por_sano.png" alt="Especial 1">
+                        <img src="assets/cartas/cambian_todos.png" alt="Especial 2">
+                        <img src="assets/cartas/contagia.png" alt="Especial 3">
+                        <img src="assets/cartas/intercambia.png" alt="Especial 4">
+                        <img src="assets/cartas/roba.png" alt="Especial 5">
+                        <img src="assets/cartas/cambia_por_sano.png" alt="Especial 6">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+    <!-- FOOTER (igual que index) -->
+    <footer class="main-footer">
+        <p>© 2025 Virus! Web Project</p>
+        <div class="social-icons">
+            <span class="material-icons">facebook</span>
+            <span class="material-icons">instagram</span>
+            <span class="material-icons">tiktok</span>
+            <span class="material-icons">twitter</span>
+        </div>
+    </footer>
+
+</body>
+</html>
