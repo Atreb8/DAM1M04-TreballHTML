@@ -1,0 +1,57 @@
+/* =========================================================
+   TIPOGRAFIA GLOBAL Y RESET
+========================================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+}
+
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 40px 12px 30px;
+    color: rgb(38, 36, 36);
+    background: linear-gradient(100deg, #a37edc, #5fc67c, #5fc67c, #f0e76a);
+    background-size: 300% 300%;
+}
+
+.logo {
+    height: 140px;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 35px;
+    color: #f4f1ff;
+    text-shadow: 0 0 10px #48296b, 0 0 35px #6136cf;
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: rgb(248, 246, 246);
+    font-weight: 500;
+    font-size: 20px;
+    padding: 11px;
+}
+
+.main-nav a:hover {
+    border: 2px solid rgb(244, 244, 239);
+    padding: 9px;
+    border-radius: 10px;
+    font-size: 20px;
+}

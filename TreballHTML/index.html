@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>Virus! – Joc de Taula</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+
+    <!-- Google Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Tu CSS -->
+    <link rel="stylesheet" href="estils.css">
+</head>
+
+<body>
+
+
+
+<!-- HEADER -->
+<header class="main-header">
+    <div class="logo-area">
+        
+        <h1>Virus!</h1>
+        <img class="logo" src="assets/img/logo.png">
+    </div>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Inici</a></li>
+            <li><a href="instruccions.html">Instruccions</a></li>
+            <li><a href="historia.html">Història</a></li>
+            <li><a href="contacte.html">Contacte</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+
+
+<!-- HERO -->
+<section class="hero">
+    <img src="assets/img/hero_img.jpg" class="hero-img" alt="Hero Image">
+    <div class="hero-content">
+        <h2>Contagia la Diversió!</h2>
+        <p>El joc de cartes més viral.</p>
+    </div>
+</section>
+
+
+<div class="parte_inf">
+    <!-- ANIMACIÓN SCROLL -->
+    <section class="scroll-section">
+        <h2>L’Aventura del Joc</h2>
+
+        <div class="scroll-reveal-container">
+            <div class="reveal-block b1">Supera epidemies!</div>
+            <div class="reveal-block b2">Salva òrgans!</div>
+            <div class="reveal-block b3">Contagia tot el que puguis!</div>
+            <div class="reveal-block b4">I guanya la partida!</div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- ANIMACIÓN VECTORIAL -->
+    <div class="pill-container">
+        <input type="checkbox" id="pill-toggle">
+
+        <label for="pill-toggle" class="pill-btn">
+            Obrir pastilla
+        </label>
+
+        <svg class="pill-svg" viewBox="0 0 300 140" width="250">
+
+            <defs>
+                <linearGradient id="leftGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#6fd6a4"/>
+                    <stop offset="100%" stop-color="#4aa37a"/>
+                </linearGradient>
+
+                <linearGradient id="rightGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#b18be8"/>
+                    <stop offset="100%" stop-color="#8c6bcf"/>
+                </linearGradient>
+
+                <linearGradient id="shineLeft" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="rgba(255,255,255,0.6)"/>
+                    <stop offset="60%" stop-color="rgba(255,255,255,0)"/>
+                </linearGradient>
+
+                <linearGradient id="shineRight" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="rgba(255,255,255,0.6)"/>
+                    <stop offset="60%" stop-color="rgba(255,255,255,0)"/>
+                </linearGradient>
+            </defs>
+
+            <!-- GRUPO IZQUIERDO -->
+            <g class="pill-left">
+                <path d="
+                    M 70 20
+                    A 50 50 0 0 0 70 120
+                    L 150 120
+                    L 150 20
+                    Z" fill="url(#leftGrad)" />
+                <ellipse cx="110" cy="40" rx="40" ry="16" fill="url(#shineLeft)" />
+            </g>
+
+            <!-- GRUPO DERECHO -->
+            <g class="pill-right">
+                <path d="
+                    M 150 20
+                    L 230 20
+                    A 50 50 0 0 1 230 120
+                    L 150 120
+                    Z" fill="url(#rightGrad)" />
+                <ellipse cx="190" cy="40" rx="40" ry="16" fill="url(#shineRight)" />
+            </g>
+
+            <!-- línea central -->
+            <line x1="150" y1="25" x2="150" y2="115"
+                stroke="rgba(255,255,255,0.6)" stroke-width="3"/>
+
+        </svg>
+
+        <p class="pill-message">🦠 Has alliberat el virus!</p>
+        <p class="pill-message">💥 Propagació activada!</p>
+
+    </div>
+
+
+
+<!-- COM ES JUGA -->
+<section class="how-to-play">
+    <div class="how-to-play-inner">
+        <h2>Com es juga?</h2>
+        
+        <ul class="game-mechanics">
+            <li>Gestiona i protegeix els teus òrgans</li>
+            <li>Infecta als teus rivals</li>
+            <li>Desinfecta i cura cartes</li>
+            <li>Planeja estratègies per guanyar</li>
+        </ul>
+
+        <a href="instruccions.html" class="btn">Veure instruccions</a>
+    </div>
+</section>
+
+
+
+<!-- FOOTER -->
+<footer class="main-footer">
+    <p>© 2025 Virus! Web Project</p>
+    <div class="social-icons">
+        <span class="material-icons">facebook</span>
+        <span class="material-icons">instagram</span>
+        <span class="material-icons">tiktok</span>
+        <span class="material-icons">twitter</span>
+    </div>
+</footer>
+
+</body>
+</html>
