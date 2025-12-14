@@ -1362,7 +1362,7 @@ body {
 ============================== */
 
 .body-about{
-    background: linear-gradient(-140deg, #e0d8b0, #8bf1b9, #c09af9, #c6b4e0);
+    background: linear-gradient(-140deg, #e0d8b0, #8bc8f1, #c6b4e0, #c6b4e0);
     background-size: 300% 300%;
     animation: gradient-move 15s ease infinite;
     letter-spacing: 1.6px;
@@ -1374,7 +1374,7 @@ body {
     align-items: center;
     padding: 12px 40px 12px 30px;
     color: rgb(38, 36, 36);
-    background: linear-gradient(150deg, #9f78db, #a0eac1, #a37edc, #aa8bf1);
+    background: linear-gradient(150deg, #9f78db, #8bc8f1, #a37edc, #aa8bf1);
     background-size: 300% 300%;
     box-shadow: 0 10px 30px -5px rgba(255, 255, 255, 0.795);
 }
@@ -1383,7 +1383,7 @@ body {
     
 /* - - - - TÍTOL PÀGINA - - -  */
 .about-title {
-    background: linear-gradient(120deg, #b391e7, #8defa9);
+    background: linear-gradient(120deg, #b391e7, #8bc8f1);
     padding: 50px 20px;
     text-align: center;
     color: #fff;
@@ -1413,9 +1413,9 @@ body {
 }
 
 .team-section h3 {
-    font-size: 40px;
+    font-size: 45px;
     color: #423c50;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     text-shadow: 0 0 3px #474449;
 }
 
@@ -1438,6 +1438,7 @@ body {
 .member-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 40px rgba(242, 241, 241, 0.9);
+    cursor: pointer;
 }
 
 .member-card img {
@@ -1467,7 +1468,7 @@ body {
 }
 
 .video-section h3 {
-    font-size: 50px;
+    font-size: 40px;
     color: #423c50;
     text-shadow: 0 0 3px #474449;
     margin-bottom: 60px;
