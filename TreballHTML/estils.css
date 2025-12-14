@@ -15,7 +15,7 @@
 /* =========================================================
    HEADER
 ========================================================= */
-.main-header {
+.back-color-index{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -140,8 +140,8 @@
 
 .scroll-section h2{
     font-size: 60px;
-    margin-bottom: 25px;
-    color: #7443bd;
+    margin-bottom: 30px;
+    color: #9f78d9;
     font-weight: 700;
     text-shadow: 0 0 5px #f5eafc, 0 0 9px #f7f7f7;
     opacity: 0;
@@ -609,19 +609,25 @@
 /* =========================================================
    RESET Y TIPOGRAFÍA
 ========================================================= */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Orbitron', sans-serif;
-}
-
 body {
-    background: linear-gradient(150deg, #a37edc, #74c28a, #a37edc, #a37edc);
+    background: linear-gradient(200deg, #3e2466, #f1b88b, #a37edc, #a37edc);
     background-size: 300% 300%;
-    animation: gradient-move 15s ease infinite;
+    animation: gradient-move 10s ease infinite;
     letter-spacing: 1.6px;
 }
+
+.back-color-instrucciones {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 40px 12px 30px;
+    color: rgb(38, 36, 36);
+    background: linear-gradient(100deg, #9f78db, #f1b88b, #a37edc, #f0e76a);
+    background-size: 300% 300%;
+    box-shadow: 0 10px 30px -5px rgba(255, 255, 255, 0.795);
+
+}
+
 
 /* =========================================================
    TÍTULO PÁGINA
