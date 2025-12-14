@@ -123,6 +123,7 @@
 .parte_inf {
     background: linear-gradient(150deg, #a37edc, #5fc67c, #dc837e, #ccdc7e);
     background-size: 300% 300%;
+    
 }
 
 
@@ -1056,7 +1057,7 @@ body {
 
 .carousel-track {
     display: flex;
-    animation: slide 20s linear infinite;
+    animation: slide 17s linear infinite;
 }
 
 .carousel-item {
