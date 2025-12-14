@@ -1374,7 +1374,7 @@ body {
     align-items: center;
     padding: 12px 40px 12px 30px;
     color: rgb(38, 36, 36);
-    background: linear-gradient(150deg, #9f78db, #8bc8f1, #a37edc, #aa8bf1);
+    background: linear-gradient(150deg, #9f78db, #8bc8f1c9, #a37edc, #aa8bf1);
     background-size: 300% 300%;
     box-shadow: 0 10px 30px -5px rgba(255, 255, 255, 0.795);
 }
@@ -1383,7 +1383,7 @@ body {
     
 /* - - - - TÍTOL PÀGINA - - -  */
 .about-title {
-    background: linear-gradient(120deg, #b391e7, #8bc8f1);
+    background: linear-gradient(120deg, #b391e7ad, #8bc8f1c9);
     padding: 50px 20px;
     text-align: center;
     color: #fff;
@@ -1415,7 +1415,7 @@ body {
 .team-section h3 {
     font-size: 45px;
     color: #423c50;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
     text-shadow: 0 0 3px #474449;
 }
 
@@ -1423,15 +1423,15 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 70px;
 }
 
 .member-card {
-    background: #97939344;
+    background: transparent;
     border-radius: 20px;
     padding: 20px;
-    width: 250px;
-    box-shadow: 0 0 20px rgba(245, 240, 240, 0.775);
+    width: 300px;
+    box-shadow: 0 0 30px rgba(245, 240, 240, 0.775);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -1444,19 +1444,21 @@ body {
 .member-card img {
     width: 190px;
     max-height: 200px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
+    margin-top: 10px;
     border-radius: 20px;
 }
 
 .member-card h4 {
     font-size: 25px;
     color: #2d2c2c;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .member-card p {
     font-size: 18px;
     color: #222121;
+    margin-bottom: 15px;
 }
 
 /* VIDEO */
