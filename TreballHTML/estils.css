@@ -1427,7 +1427,7 @@ body {
 }
 
 .member-card {
-    background: #3a3a3a44;
+    background: #97939344;
     border-radius: 20px;
     padding: 20px;
     width: 250px;
@@ -1437,7 +1437,7 @@ body {
 
 .member-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 40px rgba(0,0,0,0.12);
+    box-shadow: 0 10px 40px rgba(242, 241, 241, 0.9);
 }
 
 .member-card img {
@@ -1447,14 +1447,14 @@ body {
 }
 
 .member-card h4 {
-    font-size: 22px;
-    color: #333;
-    margin-bottom: 5px;
+    font-size: 25px;
+    color: #2d2c2c;
+    margin-bottom: 15px;
 }
 
 .member-card p {
-    font-size: 16px;
-    color: #555;
+    font-size: 18px;
+    color: #222121;
 }
 
 /* VIDEO */
