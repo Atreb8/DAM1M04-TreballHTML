@@ -600,6 +600,7 @@
 
 
 
+
 /* - - - - - - - - - - - - INSTRCCIÓNS - - -  - - -  - -  - -  - -*/
 /* - - - - - - - - - - - - INSTRCCIÓNS - - -  - - -  - -  - -  - -*/
 
@@ -968,5 +969,191 @@ body {
     }
     .cards-animated .card {
         width: 80%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* - - - - - - - - - - - - HISTÓRIA - - -  - - -  - -  - -  - -*/
+/* - - - - - - - - - - - - HISTÓRIA - - -  - - -  - -  - -  - -*/
+.body-historia{
+    background: linear-gradient(-150deg, #e0d8b0, #6bcaac, #a075df, #c6b4e0);
+    background-size: 300% 300%;
+    animation: gradient-move 15s ease infinite;
+    letter-spacing: 1.6px;
+}
+
+.back-color-historia {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 40px 12px 30px;
+    color: rgb(38, 36, 36);
+    background: linear-gradient(150deg, #8a51df, #6bcaac, #a37edc, #f0e76a);
+    background-size: 300% 300%;
+    box-shadow: 0 10px 30px -5px rgba(255, 255, 255, 0.795);
+
+}
+/* =========================================================
+   HISTÒRIA - CARRUSEL Y BLOQUES
+========================================================= */
+/* Título principal historia */
+.historia-title {
+    background: linear-gradient(135deg, #c299ff, #6bcaac);
+    padding: 50px 20px;
+    text-align: center;
+    color: #fff;
+    border-radius: 20px;
+    max-width: 900px;
+    margin: 50px auto 0 auto;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.10);
+}
+
+.historia-title h2 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.historia-title p {
+    font-size: 20px;
+    color: #f0f0ff;
+}
+
+
+
+/* - - - - - - Carrusel - - - - - - */
+.carousel-section {
+    overflow: hidden;
+    max-width: 800px;
+    margin: 50px auto 100px auto;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #c299ff, #6bcaac);
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.10);
+}
+
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+}
+
+.carousel-track {
+    display: flex;
+    animation: slide 20s linear infinite;
+}
+
+.carousel-item {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+}
+
+.carousel-item img {
+  
+    height: 400px;
+    border-radius: 15px;
+    object-fit: contain;   /* ajusta la imagen al contenedor sin cortar */
+   
+}
+
+/* Animación de desplazamiento suave y continuo */
+@keyframes slide {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(0); }
+    25% { transform: translateX(-100%); }
+    45% { transform: translateX(-100%); }
+    50% { transform: translateX(-200%); }
+    70% { transform: translateX(-200%); }
+    75% { transform: translateX(-300%); }
+    95% { transform: translateX(-300%); }
+    100% { transform: translateX(0); }
+}
+
+/* - - - - - - Bloques de historia -  - - -  - */
+
+.history-content {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    max-width: 1000px;
+    margin: 0 auto 100px auto;
+    padding: 0 20px;
+}
+
+.history-block {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background: linear-gradient(150deg, #b68ad9, #6bcaac); 
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 15px 15px 15px rgba(0,0,0,0.22);
+    flex-wrap: wrap;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.history-block:hover {
+    transform: translateY(-5px);
+    box-shadow: 30px 30px 35px rgba(0,0,0,0.32);
+}
+
+.history-block.reverse {
+    flex-direction: row-reverse;
+}
+
+.history-block img {
+    width: 250px;
+    border-radius: 18px;
+    box-shadow: 5px 10px 10px rgba(0,0,0,0.12);
+}
+
+.history-block .text {
+    flex: 1;
+}
+
+.history-block .text h3 {
+    font-size: 34px;
+    color: #4b3d6b; /* color elegante */
+    margin-bottom: 15px;
+}
+
+.history-block .text p {
+    font-size: 18px;
+    color: #2d2a2a;
+    line-height: 1.6;
+}
+
+/* Responsive */
+@media screen and (max-width: 950px) {
+    .history-block {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .history-block.reverse {
+        flex-direction: column;
+    }
+
+    .history-block img {
+        margin-bottom: 20px;
+        width: 70%;
     }
 }
