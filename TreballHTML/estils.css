@@ -1120,7 +1120,7 @@ body {
 .history-block img {
     width: 250px;
     border-radius: 18px;
-    box-shadow: 5px 10px 10px rgba(0,0,0,0.12);
+    box-shadow: 2px 5px 10px 5px rgba(0,0,0,0.12);
 }
 
 .history-block .text {
@@ -1332,5 +1332,162 @@ body {
 
     .info-block {
         padding: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* - - - - - - - - - - - - ABOUT - - -  - - -  - -  - -  - -*/
+/* - - - - - - - - - - - - ABOUT - - -  - - -  - -  - -  - -*/
+
+
+/* ==============================
+   ABOUT US
+============================== */
+
+.body-about{
+    background: linear-gradient(-140deg, #e0d8b0, #8bf1b9, #c09af9, #c6b4e0);
+    background-size: 300% 300%;
+    animation: gradient-move 15s ease infinite;
+    letter-spacing: 1.6px;
+}
+
+.back-color-about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 40px 12px 30px;
+    color: rgb(38, 36, 36);
+    background: linear-gradient(150deg, #9f78db, #a0eac1, #a37edc, #aa8bf1);
+    background-size: 300% 300%;
+    box-shadow: 0 10px 30px -5px rgba(255, 255, 255, 0.795);
+}
+
+
+    
+/* - - - - TÍTOL PÀGINA - - -  */
+.about-title {
+    background: linear-gradient(120deg, #b391e7, #8defa9);
+    padding: 50px 20px;
+    text-align: center;
+    color: #fff;
+    border-radius: 20px;
+    max-width: 900px;
+    margin: 50px auto 100px auto;
+    box-shadow: 0 0 30px rgba(248, 245, 245, 0.666);
+}
+
+.about-title h2 {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.about-title p {
+    font-size: 25px;
+    color: #f0f0ff;
+}
+
+
+/* - - - - EQUIP - - -  -*/
+.team-section {
+    max-width: 1100px;
+    margin: 120px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.team-section h3 {
+    font-size: 40px;
+    color: #423c50;
+    margin-bottom: 40px;
+    text-shadow: 0 0 3px #474449;
+}
+
+.team-members {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.member-card {
+    background: #3a3a3a44;
+    border-radius: 20px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 0 20px rgba(245, 240, 240, 0.775);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.member-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.12);
+}
+
+.member-card img {
+    width: 190px;
+    max-height: 200px;
+    margin-bottom: 15px;
+}
+
+.member-card h4 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.member-card p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* VIDEO */
+.video-section {
+    max-width: 900px;
+    margin: 100px auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.video-section h3 {
+    font-size: 50px;
+    color: #423c50;
+    text-shadow: 0 0 3px #474449;
+    margin-bottom: 60px;
+}
+
+.video-container iframe {
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+    border-radius: 18px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.7);
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 950px) {
+    .team-members {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .video-container iframe {
+        height: 300px;
     }
 }
